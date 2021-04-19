@@ -14,3 +14,9 @@
 .ui.teal.bottons .button:focus {
   background-color: #00b5ad;
 }
+
+@media (max-width: 400px) {
+  .single {
+    width: 500px !important;
+  }
+}
