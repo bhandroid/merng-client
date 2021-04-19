@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import "./../App.css";
 import { useQuery } from "@apollo/react-hooks";
 import { Grid, GridColumn } from "semantic-ui-react";
 
@@ -27,7 +27,7 @@ function Home() {
         ) : (
           data.getPosts &&
           data.getPosts.map((post) => (
-            <GridColumn key={post.id} style={{ marginBottom: 20 }}>
+            <GridColumn className="single" key={post.id} style={{ marginBottom: 20 }}>
               <PostCard post={post} />
             </GridColumn>
           ))
